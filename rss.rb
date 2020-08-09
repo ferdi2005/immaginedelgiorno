@@ -26,5 +26,5 @@ if !File.exist? '.wikiuser'
   end
 end
 userdata = File.open(".wikiuser", "r").to_a
-client.log_in "#{userdata[0]}", "#{userdata[1]}
+client.log_in "#{userdata[0]}", "#{userdata[1]}"
 client.edit title: "Utente:Ferdi2005/immaginedelgiorno", text: "[[File:#{nomefile}|#{didascalia}|200x200px|miniatura|center]]"
